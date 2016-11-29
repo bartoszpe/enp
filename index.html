@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<title>Rekrutacja ENP: Zadanie rekrutacyjne</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/movie.styles.css">
+</head>
+<body>
+<div class="movie_container">
+  <div class="col-2">
+    <div class="movie_box">
+      <form action="#" class="movie_serch_form">
+        <input class="movie_input_first" type="text" name="firstMovie" placeholder="Tytył filmu" pattern=".{2,}" required title="Wymagane minimum 2 znaki" />
+        <input class="movie_input_second" type="text" name="secondMovie" placeholder="Tytył filmu" pattern=".{2,}" required title="Wymagane minimum 2 znaki" />
+        <button class="button_search" type="submit">Wyślij</button>
+        <input type="hidden" name="id_entry" value="0" />
+      </form>
+    </div>
+    <div class="movie_box">
+      <h2>Wspólna obsada</h2>
+      <div class="movie_results">
+        <div class="results_contents results_first"></div>
+        <div class="results_contents results_second"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="movie_box">
+      <h2>Ostatnie wyszukiwanie</h2>
+      <table class="search-movie-table">
+      </table>
+      <button class="button_clear" value="Clear" onclick="ClearMovieSearchList()">Wyczyść</button>
+    </div>
+  </div>
+</div>
+<script src="js/movie.scripts.js"></script>
+<script src="js/movie.storage.js"></script>
+</body>
+</html>
